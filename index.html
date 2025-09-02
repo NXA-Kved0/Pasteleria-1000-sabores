@@ -1,24 +1,183 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pasteleria 1000 sabores </title>
+    <title>Pastelería 1000 Sabores - 50 años de tradición dulce</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <section id="first">
-        <nav>
-            <a href="#">Home</a>
-            <a href="#">Catalogo</a>
-            <a href="#">Envios</a>
-            <a href="#">Promociones</a>
-        </nav>
-        <button>Inicia secion</button>
-        <button>Carrito de compras</button>
-    </section>
-    <section id="second">
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <h1>Pastelería 1000 Sabores</h1>
+                <p>50 años endulzando Chile</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#catalogo">Catálogo</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="user-actions">
+                <button id="login-btn" class="btn-secondary">Iniciar sesión</button>
+                <button id="cart-btn" class="btn-primary">Carrito (0)</button>
+            </div>
+        </div>
+    </header>
 
-    </section>
-    
+    <main>
+        <section id="hero" class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h2>Celebra con nosotros 50 años de dulces momentos</h2>
+                    <p>Descubre nuestras exquisiteces y recibe descuentos especiales por aniversario</p>
+                    <a href="#catalogo" class="btn-primary">Ver catálogo</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="promociones" class="promotions">
+            <div class="container">
+                <h2>Promociones de aniversario</h2>
+                <div class="promo-cards">
+                    <div class="promo-card">
+                        <h3>50% de descuento</h3>
+                        <p>Para usuarios mayores de 50 años en todos nuestros productos</p>
+                    </div>
+                    <div class="promo-card">
+                        <h3>10% de descuento permanente</h3>
+                        <p>Usa el código <strong>FELICES50</strong> al registrarte</p>
+                    </div>
+                    <div class="promo-card">
+                        <h3>Torta gratis en tu cumpleaños</h3>
+                        <p>Para estudiantes Duoc UC con correo institucional</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="catalogo" class="catalog">
+            <div class="container">
+                <h2>Nuestros productos</h2>
+                <div class="filters">
+                    <button class="filter-btn active">Todos</button>
+                    <button class="filter-btn">Tortas Cuadradas</button>
+                    <button class="filter-btn">Tortas Circulares</button>
+                    <button class="filter-btn">Postres Individuales</button>
+                    <button class="filter-btn">Sin Azúcar</button>
+                </div>
+                
+                <div class="products-grid">
+                    <article class="product-card">
+                        <img src="pastel chocolate.jpg" alt="Torta Redonda de Chocolate">
+                        <div class="product-info">
+                            <h3>Torta Redonda de Chocolate</h3>
+                            <p class="product-desc">Deliciosa torta de chocolate con capas de ganache y avellanas.</p>
+                            <p class="product-price">$45.000 CLP</p>
+                            <button class="btn-primary add-to-cart">Añadir al carrito</button>
+                        </div>
+                    </article>
+                    
+                    <!--Aka falta basura-->
+                </div>
+            </div>
+        </section>
+
+        <section id="registro" class="registration">
+            <div class="container">
+                <h2>Regístrate y obtén beneficios exclusivos</h2>
+                <form id="register-form" class="form">
+                    <div class="row">
+                        <label for="nombre">Nombre completo</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+                    
+                    <div class="row">
+                        <label for="email">Correo electrónico</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="row">
+                        <label for="fecha-nacimiento">Fecha de nacimiento</label>
+                        <input type="date" id="fecha-nacimiento" name="fecha-nacimiento" required>
+                    </div>
+                    
+                    <div class="row">
+                        <label for="password">Contraseña</label>
+                        <input type="password" id="password" name="password" required minlength="6">
+                    </div>
+                    
+                    <div class="row">
+                        <label for="codigo-promocional">Código promocional (opcional)</label>
+                        <input type="text" id="codigo-promocional" name="codigo-promocional" placeholder="Ej: FELICES50">
+                    </div>
+                    
+                    <button type="submit" class="btn-primary">Registrarse</button>
+                </form>
+            </div>
+        </section>
+
+        <section id="nosotros" class="about">
+            <div class="container">
+                <h2>Nuestra historia</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Pastelería 1000 Sabores celebra 50 años como referente en la repostería chilena. Famosa por nuestra participación en un récord Guinness en 1995, colaborando en la creación de la torta más grande del mundo.</p>
+                        <p>Hoy renovamos nuestro sistema de ventas online para ofrecer una experiencia de compra moderna y accesible, manteniendo la calidad y tradición que nos caracteriza.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="miaumiaupower.jpg" alt="Nuestra historia">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Pastelería 1000 Sabores</h3>
+                    <p>50 años endulzando Chile</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces rápidos</h4>
+                    <ul>
+                        <li><a href="#inicio">Inicio</a></li>
+                        <li><a href="#catalogo">Catálogo</a></li>
+                        <li><a href="#nosotros">Nosotros</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Dirección: Av. Dulce 123, Santiago</p>
+                    <p>Teléfono: +56 2 2345 6789</p>
+                    <p>Email: info@1000sabores.cl</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <div class="social-icons">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>TW</span></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Pastelería 1000 Sabores. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
